@@ -1,0 +1,40 @@
+The diff and fc programs allow the user to quickly identify differences between two files.
+Performing this task manually would take a long time.
+Therefore the main advantage of these programs is speed.
+This approach will allow a developer to identify what has changed, even if the code has been written by somebody else.
+These changes can then be reversed without having to go back to a previous version, thus losing other changes.
+
+The advantages of having easy access to the full history of a file are clear.
+Some changes that are made to the file may not be wanted.
+The full history allows the person writing the file to roll-back to before the change was made.
+This prevents the user from having to manually undo all those changes.
+It also makes it clear what changes have been made between the two versions.
+This means that a retrospective change-log is made much easier.
+
+The advantage of an automatic save is that the code gets saved even if the developer forgets to do so themself.
+However the state of the coe at the time the file is saved is questionable.
+This can lead to unusable code, and the developer will then need to spend time fixing the error.
+Manually choosing the save points eliminates this error, and each save point should be usable.
+However this relies on the developer remembering to save at the appropriate points.
+If they forget then there will likely be too few commits.
+This means that the changes between commits will be large and possibly unrelated, therefore much harder to decipher.
+
+Google docs is not really designed as a system for developing code.
+Most of the files handlded will be unrelated and therefore a change to one file will not affect another
+Git on the other hand is well suited to code development.
+As in the HTML example there are often related files (eg javascript and CSS)
+A change to one file will affect the other, and therefore a system that handles multiple files together is extremely useful.
+
+
+How can you use the commands git log and git diff to view the history of files?
+git log is a useful command that will display a list of all of the commits for a given application
+Each commit has a unique ID that can be used to retrieve a previous version of the code.
+The ID can be used in conjunction with git diff to view the differences between two commits.
+
+How might using version control make you more confident to make changes that could break something?
+It is much easier to make confident changes when you know that they can be easily undone.
+The exact fault can be easily found using a combination of git log and git diff
+
+Now that you have your workspace set up, what do you want to try using Git for?
+To learn how to create a new version of a piece of code
+
