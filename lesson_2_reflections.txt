@@ -1,16 +1,83 @@
-What happens when you initialize a repository? Why do you need to do it?
+What happens when you initialize a repository? 
+Why do you need to do it?
 
 This creates a new folder called .git
-This is required to store the information about changes to files as learnt in lesson 1.
-Without this commits, file differences and checkouts (returning to previous versions) would be impossible.
+This is required to store the information about 
+changes to files as learnt in lesson 1.
+Without this commits, file differences and checkouts 
+(returning to previous versions) would be impossible.
 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area is critical for adding multiple files to the same commit.
-Choosing the files to group together is a useful feature, that allows a great degree of flexibility.
+The staging area is critical for adding multiple files to 
+the same commit.
+Choosing the files to group together is a useful feature, 
+that allows a great degree of flexibility.
 The repository is where the file information is stored once committed.
 The working directory houses a set of files from a given commit.
 It is like a buffer where information can be temporarily stored without making any permenent changes.
 
 
+How can you use the staging area to make sure you have one commit 
+per logical change?
+
+This is possible because you have control over the
+number of files that are added to the staging area.
+The developer should also be aware of the etxent of changes
+to a given file
+A large number of changes could be made to a single file
+which could be unrelated (more than 1 logical change)
+This should be avoided wherever possible.
+
+
+What are some situations when branches would be helpful in keeping 
+your history organized? How would branches help?
+
+There are many reasons for making changes to files
+Some of these changes are simple and likely to be kept
+For code some changes may result in unexpected or unwanted behaviour
+In these cases it is helpful to make these changes to a separate
+version of the files
+If the changes are desirable they can be included in the main version
+If they do not work then they are already isolated
+That branch of the code can then be disregarded
+
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams are an easy way to see at what stage in the development
+each branch was created.
+It is also clear how many and what changes correspond to each branch.
+It can also indicate at which stage in the process each branch was
+first created.
+This pictorial format can be much easier to understand than the log.
+The log is a linear representation of the commits in a given branch
+which lacks information about other branches.
+
+
+What is the result of merging two branches together? 
+Why do we represent it in the diagram the way we do?
+
+The result of merging two branches together is to combine the changes
+from the two branches into a single set of files
+In the example a branch featuring a new feature for coins is added
+to the master branch.
+In both cases changes had been made since the last common commit.
+And the changes from both branches were preserved.
+This is represented on the diagram by the two branches joining
+together.
+This makes sense because changes from each branch are now added together
+
+
+What are the pros and cons of Git’s automatic merging vs. always 
+doing merges manually?
+
+pros
+Massively simplifies the process of combining changes by more than
+one user of a particular file.
+Operates in a consistent and predictable manner.
+Can handle a large number of changes in a short period of time.
+
+cons
+There is a possibility of unusable code if essential lines are removed.
