@@ -19,3 +19,26 @@ These problems are unique to GitHub, since changes on the local machine
 are likely made by the repository owner.
 
 
+Describe the differences between forks, clones, and branches. 
+When would you use one instead of another?
+
+A fork would only be used on GitHub, not on a local repository.
+It is similar to clone, and will create a copy of a repository
+under your own login.
+A clone will make a copy of a repository, either from GitHub or
+the local machine, including the history of revisions.
+A branch will create a copy of certain changes within a
+repository since a given time.
+
+
+What is the benefit of having a copy of the last known state 
+of the remote stored locally?
+
+Having a local and remote repository means that the two 
+versions can become out of sync.
+It is benefical to know the state of the remote repository
+so that the differences between local and remote copies can
+be identified.
+It is then evident when the local changes should be pushed
+to GitHub.
+
