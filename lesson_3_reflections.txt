@@ -8,3 +8,14 @@ repository:
 - to share work on a project
 - to allow access to files from multiple computers and locations
 
+
+Why might you want to always pull changes manually rather than having 
+Git automatically stay up-to-date with your remote repository?
+
+It is helpful to consider changes made by other users at this stage
+They may have made changes to the files that you do not want
+Or may have made changes that are incomplete and will not make sense
+These problems are unique to GitHub, since changes on the local machine
+are likely made by the repository owner.
+
+
